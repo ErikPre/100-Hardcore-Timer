@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "hc100",
+  "version": "${version}",
+  "name": "HC100 Timer",
+  "description": "",
+  "authors": [
+    "DeadlyFarts"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.deadlyfarts.mcsr.hc100timer.HC100Timer"
+    ],
+    "speedrunigt": [
+      "com.deadlyfarts.mcsr.hc100timer.HC100Impl"
+    ]
+  },
+  "mixins": [
+    "hc100timer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.2",
+    "minecraft": "1.16.1",
+    "speedrunigt": ">=7.0"
+  }
+}
